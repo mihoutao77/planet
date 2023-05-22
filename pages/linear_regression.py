@@ -7,20 +7,20 @@ st.title("Linear Regression")
 header = 'Simple Linear Regression'
 st.header(header)
 
-subheader = '算法原理'
+subheader = 'Algorithm principle'
 st.subheader(subheader)
 
 msg = '''
-简单线性回归是一种*统计方法*，它可以让我们总结和研究两个连续(定量)变量之间的关系。\n
-它可能是统计和机器学习中最受欢迎的良好推理算法之一。\n
-其中一个变量作为解释变量，另一个作为因变量。
+Simple Linear Regression is a *statistical method* that allows us to summarize and study the relationship between two continuous (quantitative) variables. \n
+It is probably one of the most popular algorithms for good inference in statistics and machine learning. \n
+One of the variables is used as an explanatory variable and the other as a dependent variable.
 '''
 st.markdown(msg)
 
 img = Image.open('images/Linear Regression.jpg')
 st.image(img)
 
-subheader = '示例代码'
+subheader = 'sample code'
 st.subheader(subheader)
 
 code = '''
@@ -70,7 +70,7 @@ plt.show()
 '''
 st.code(code)
 
-if st.button('运行本例'):
+if st.button('run this example'):
     import matplotlib.pyplot as plt
     import numpy as np
     from sklearn import datasets, linear_model
@@ -120,19 +120,19 @@ if st.button('运行本例'):
 header = 'Multiple Linear Regression'
 st.header(header)
 
-subheader = '算法原理'
+subheader = 'Algorithm principle'
 st.subheader(subheader)
 
 msg = '''
-多元线性回归(Multiple linear regression, MLR)，简称多元回归，是一种利用多个解释变量来预测一个响应变量的结果的机器学习算法。\n
-在现实中，多元回归是普通最小二乘回归(OLS)的扩展，因为它包含多个解释变量。 
+Multiple linear regression (MLR), referred to as multiple regression, is a machine learning algorithm that uses multiple explanatory variables to predict the outcome of a response variable. \n
+In reality, multiple regression is an extension of ordinary least squares regression (OLS) because it includes multiple explanatory variables.
 '''
 st.markdown(msg)
 
 img = Image.open('images/Multiple Linear Regression.jpg')
 st.image(img)
 
-subheader = '示例代码'
+subheader = 'sample code'
 st.subheader(subheader)
 
 code = '''
@@ -209,7 +209,7 @@ fig.tight_layout()
 '''
 st.code(code)
 
-if st.button('运行程序'):
+if st.button('run the program'):
     import pandas as pd
     import numpy as np
     import matplotlib.pyplot as plt
