@@ -3,20 +3,20 @@ from PIL import Image
 
 st.title("Decision Trees")
 
-header = '算法原理'
+header = 'Algorithm principle'
 st.header(header)
 
 msg = '''
-决策树是一种类似流程图的树结构，它使用分支方法来说明决策的每一个可能结果。\n
-树中的每个节点表示对特定变量的测试—每个分支都是该测试的结果。\n
-一些最流行的决策树算法是分类和回归树(CART)，迭代二分类器3 (ID3)， C4.5和C5.0，卡方自动交互检测(CHAID)，决策树桩，等等。
+A decision tree is a flowchart-like tree structure that uses a branching method to illustrate each possible outcome of a decision. \n
+Each node in the tree represents a test of a particular variable—each branch is the result of that test. \n
+Some of the most popular decision tree algorithms are Classification and Regression Trees (CART), Iterative Binary Classifier 3 (ID3), C4.5 and C5.0, Chi-Square Automatic Interaction Detection (CHAID), Decision Stumps, and others.
 '''
 st.markdown(msg)
 
 img = Image.open('images/Decision Trees.jpg')
 st.image(img)
 
-header = '示例代码'
+header = 'sample code'
 st.header(header)
 
 code = '''
@@ -56,7 +56,7 @@ plt.show()
 
 st.code(code)
 
-if st.button("运行本例"):
+if st.button("run this example"):
     # Import the necessary modules and libraries
     import numpy as np
     from sklearn.tree import DecisionTreeRegressor
