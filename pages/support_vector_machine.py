@@ -4,20 +4,20 @@ from PIL import Image
 
 st.title("Support Vector Machine")
 
-header = '算法原理'
+header = 'Algorithm principle'
 st.header(header)
 
 msg = '''
-支持向量机(SVM)是一种由分离超平面正式定义的判别分类器。\n
-换句话说，给定标记训练数据(监督学习)，该算法输出一个最佳超平面，用于对新示例进行分类。\n
-在二维空间中，超平面是一条线，它将一个平面分成两部分，每一类都位于其中的任何一边。\n
+A Support Vector Machine (SVM) is a discriminative classifier formally defined by a separating hyperplane. \n
+In other words, given labeled training data (supervised learning), the algorithm outputs an optimal hyperplane for classifying new examples. \n
+In two dimensions, a hyperplane is a line that divides a plane into two parts with each class lying on either side of it. \n
 '''
 st.markdown(msg)
 
 img = Image.open('images/Support Vector Machine.jpg')
 st.image(img)
 
-header = '示例代码'
+header = 'sample code'
 st.header(header)
 
 code = '''
@@ -79,7 +79,7 @@ plt.show()
 '''
 st.code(code)
 
-if st.button("运行本例"):
+if st.button("run this example"):
 
     import numpy as np
     import matplotlib.pyplot as plt
