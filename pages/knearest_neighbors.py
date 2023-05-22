@@ -3,21 +3,21 @@ from PIL import Image
 
 st.title("K-Nearest Neighbors Algorithm")
 
-header = '算法原理'
+header = 'Algorithm principle'
 st.header(header)
 
 msg = '''
-k近邻(kNN)是一种监督学习算法，可用于解决分类和回归任务。\n
-这个算法背后的主要思想是，一个数据点的值或类是由它周围的数据点决定的。\n
-kNN分类器采用多数表决原则确定数据点的类别。由于模型需要存储所有的数据点，随着数据点数量的增加，kNN变得非常慢。\n
-因此，它的内存效率也不高。kNN的另一个缺点是它对异常值很敏感。\n
+k Nearest Neighbors (kNN) is a supervised learning algorithm that can be used to solve classification and regression tasks. \n
+The main idea behind this algorithm is that the value or class of a data point is determined by the data points around it. \n
+The kNN classifier uses majority voting to determine the class of a data point. Since the model needs to store all the data points, kNN becomes very slow as the number of data points increases. \n
+Therefore, it is also not very memory efficient. Another disadvantage of kNN is that it is sensitive to outliers. \n
 '''
 st.markdown(msg)
 
 img = Image.open('images/K-Nearest Neighbors Algorithm.jpg')
 st.image(img)
 
-header = '示例代码'
+header = 'sample code'
 st.header(header)
 
 code = '''
@@ -64,7 +64,7 @@ plt.show()
 
 st.code(code)
 
-if st.button("运行本例"):
+if st.button("run this example"):
 
 # Import necessary modules
     from sklearn.neighbors import KNeighborsClassifier
