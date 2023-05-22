@@ -3,21 +3,21 @@ from PIL import Image
 
 st.title("Hierarchical Clustering Algorithm")
 
-header = '算法原理'
+header = 'Algorithm principle'
 st.header(header)
 
 msg = '''
-层次聚类是指通过迭代分组或分离数据点来创建集群树。有两种类型的层次聚类，称为聚集聚类和分裂聚类。\n
-聚集性集群是自底向上的方法。它合并最相似的两个点，直到所有点合并成一个簇。\n
-分裂的集群是自上而下的方法。它从所有点作为一个簇开始，并在每一步分割出最不相似的簇，直到只剩下单个数据点。\n
-分层集群的优点之一是我们不必指定集群的数量(但我们可以)。
+Hierarchical clustering refers to creating a tree of clusters by iteratively grouping or separating data points. There are two types of hierarchical clustering known as agglomerative clustering and divisive clustering. \n
+Aggregative clustering is a bottom-up approach. It merges the two points that are most similar until all points are merged into one cluster. \n
+Split clusters are a top-down approach. It starts with all points as a cluster and splits out the most dissimilar clusters at each step until only single data points remain. \n
+One of the advantages of hierarchical clustering is that we don't have to specify the number of clusters (but we can)。
 '''
 st.markdown(msg)
 
 img = Image.open('images/Hierarchical Clustering Algorithm.jpg')
 st.image(img)
 
-header = '示例代码'
+header = 'sample code'
 st.header(header)
 
 code = '''
@@ -66,7 +66,7 @@ plt.show()
 '''
 st.code(code)
 
-if st.button("运行本例"):
+if st.button("run this example"):
     import numpy as np
 
     from matplotlib import pyplot as plt
