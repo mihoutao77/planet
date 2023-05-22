@@ -3,20 +3,20 @@ from PIL import Image
 
 st.title("Random Forest")
 
-header = '算法原理'
+header = 'Algorithm principle'
 st.header(header)
 
 msg = '''
-随机森林算法基于决策树的预测来建立结果。\n
-它通过对各种树的输出取平均值来进行预测，增加树的数量会增加结果的精度。\n
-随机森林消除了决策树算法的局限性，减少了数据集的过拟合，提高了精度。
+The random forest algorithm builds results based on the predictions of the decision tree. \n
+It makes predictions by averaging the outputs of various trees, and increasing the number of trees increases the accuracy of the results. \n
+Random forests eliminate the limitations of decision tree algorithms, reduce overfitting of datasets, and improve accuracy.
 '''
 st.markdown(msg)
 
 img = Image.open('images/Random Forest.jpg')
 st.image(img)
 
-header = '示例代码'
+header = 'sample code'
 st.header(header)
 
 code = '''
@@ -54,7 +54,7 @@ plt.show()
 '''
 st.code(code)
 
-if st.button("运行本例"):
+if st.button("run this example"):
     import pandas as pd
     from sklearn.model_selection import train_test_split
     from sklearn.ensemble import RandomForestClassifier
