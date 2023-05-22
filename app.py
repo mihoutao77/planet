@@ -54,7 +54,7 @@ with st.sidebar:
         """
         Thanks to XiaoFu
         
-        Thanks ML01 2023 Spring
+        Thanks ML 2023
 
         [Learn More](https://open-academy.github.io/machine-learning/intro.html)
         
