@@ -52,11 +52,11 @@ with st.sidebar:
     st.sidebar.title("Tips")
     st.sidebar.info(
         """
-        Thanks to 小夫
+        Thanks to XiaoFu
         
         Thanks ML01 2023 Spring
 
-        Learn More：https://open-academy.github.io/machine-learning/intro.html
+        [Learn More](https://open-academy.github.io/machine-learning/intro.html)
         
         """
     )
