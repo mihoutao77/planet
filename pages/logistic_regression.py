@@ -3,20 +3,20 @@ from PIL import Image
 
 st.title("Logistic Regression")
 
-header = '算法原理'
+header = 'Algorithm principle'
 st.header(header)
 
 msg = '''
-逻辑回归是被称为分类算法的机器学习算法家族的一部分。它是解决二元分类问题的首选方法。\n
-该算法通过拟合数据到logit函数来预测事件发生的概率。\n
-因此，它也被称为logit回归。客户流失、垃圾邮件、网站或广告点击预测是逻辑回归提供强大解决方案的一些例子。
+Logistic regression is part of a family of machine learning algorithms known as classification algorithms. It is the method of choice for solving binary classification problems. \n
+The algorithm predicts the probability of an event by fitting the data to a logit function. \n
+Hence, it is also known as logit regression. Customer churn, spam, website or ad click prediction are some examples where logistic regression provides a powerful solution.
 '''
 st.markdown(msg)
 
 img = Image.open('images/Logistic Regression.jpg')
 st.image(img)
 
-header = '示例代码'
+header = 'sample code'
 st.header(header)
 
 code = '''
@@ -94,7 +94,7 @@ plt.show()
 
 st.code(code)
 
-if st.button('运行本例'):
+if st.button('run this example'):
     import numpy as np
     import matplotlib.pyplot as plt
 
