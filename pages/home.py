@@ -7,9 +7,9 @@ st.title("Machine Learning")
 
 image = Image.open('images/Machine Learning.jpg')
 
-st.image(image, caption='机器学习常用算法分类')
+st.image(image, caption='Classification of Common Algorithms for Machine Learning')
 
 msg = '''
-机器学习是一门让计算机在没有明确编程的情况下行动的科学。在过去的十年里，机器学习为我们带来了自动驾驶汽车、实用的语音识别、有效的网络搜索，并极大地提高了对人类基因组的理解。机器学习在今天是如此的普遍，你可能每天使用它几十次而不知道它。许多研究人员还认为，这是向人类水平的人工智能取得进展的最佳方式。
+Machine learning is the science of getting computers to act without being explicitly programmed to do so. Over the past decade, machine learning has brought us self-driving cars, practical speech recognition, efficient web search, and vastly improved understanding of the human genome. Machine learning is so pervasive today, you probably use it dozens of times a day without knowing it. Many researchers also believe that this is the best way to make progress towards human-level artificial intelligence.
 '''
 st.markdown(msg)
