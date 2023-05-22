@@ -3,20 +3,20 @@ from PIL import Image
 
 st.title("K-Means Clustering Algorithm")
 
-header = '算法原理'
+header = 'Algorithm principle'
 st.header(header)
 
 msg = '''
-K均值聚类是最流行的聚类算法之一，是实践者在解决聚类任务时第一个应用的算法，以获得数据集的结构。\n
-这是一种算法，给定一个数据集，将识别哪些数据点属于k个簇中的每一个，获取您的数据并学习如何对其进行分组。\n
-通过一系列迭代，该算法创建了被称为集群的数据点组，这些数据点具有相似的方差，并最小化特定的代价函数:集群内的平方和。
+K-means clustering is one of the most popular clustering algorithms and is the first algorithm applied by practitioners when solving clustering tasks to obtain the structure of a dataset. \n
+It's an algorithm that, given a dataset, will identify which data points belong to each of k clusters, take your data and learn how to group it. \n
+Through a series of iterations, the algorithm creates groups of data points called clusters that have similar variances and minimizes a specific cost function: the sum of squares within the cluster.
 '''
 st.markdown(msg)
 
 img = Image.open('images/K-Means Clustering Algorithm.jpg')
 st.image(img)
 
-header = '示例代码'
+header = 'sample code'
 st.header(header)
 
 code = '''
@@ -98,7 +98,7 @@ fig.show()
 
 st.code(code)
 
-if st.button('运行本例'):
+if st.button('run this example'):
 
     import numpy as np
     import matplotlib.pyplot as plt
