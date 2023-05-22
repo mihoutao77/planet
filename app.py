@@ -6,18 +6,18 @@ from pathlib import Path
 current_path = Path(__file__).parent.absolute()
 
 # Supervised Learning
-stb.set_book_config(menu_title="机器学习算法",
+stb.set_book_config(menu_title="machine learning algorithm",
                     menu_icon="",
                     options=[
-                            "机器学习概述",
-                            "线性回归",
-                            "逻辑回归",
-                            "决策树",
-                            "随机森林",
-                            "支持向量机",
-                            "K最近邻算法",
-                            "K均值聚类算法",
-                            "层次聚类算法"
+                            "Machine Learning",
+                            "linear regression",
+                            "logistic regression",
+                            "decision tree",
+                            "random forest",
+                            "Support Vector Machines",
+                            "K nearest neighbor algorithm",
+                            "K-means clustering algorithm",
+                            "hierarchical clustering algorithm"
                             ],
                     paths=[
                         current_path / "pages/home.py",
